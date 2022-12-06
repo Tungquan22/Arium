@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Ariums | Mini Nature</title>
         <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
@@ -11,26 +12,28 @@
             <div class="page-logo">
                 <img src="images/terrarium-icon.png">
             </div>
-            <div class="nav-buttons">
-                <a href="#">About</a>
-                <a href="#">Shop</a>
-                <a href="#">Contact</a>
+            <div class="nav-links">
+                <a href="#opening-section">About</a>
+                <a href="#example-arium-types-section">Types</a>
+                <a href="#quote-section">Quote</a>
             </div>
         </nav>
 
         <div id="opening-section" class="section">
-            <div class="text-box">
-                <h1>Welcome all who love or are interested in different kinds of Ariums!</h1>
-                <p>
-                    <em>arium</em> is a Latin suffix meaning "container". However, the prefix tells us the difference between the many types of Ariums. 
-                    For example, <em>terra</em> means "earth", or <em>aqua</em> means "water".
-                </p>
-                <button type="button">Sign Up</button>
-            </div>
+            <div class="opening-box">
+                <div class="text-box">
+                    <h1>Welcome all who love or are interested in different kinds of Ariums!</h1>
+                    <p>
+                        <em>Arium</em> is a Latin suffix meaning "container". However, the prefix tells us the difference between the many types of Ariums. 
+                        For example, <em>terra</em> means "earth", or <em>aqua</em> means "water".
+                    </p>
+                    <button type="button">Sign Up</button>
+                </div>
 
-            <div class="image-box">
-                <img src="images/terrarium-opening-image.jpg">
-                <p>A terrarium. Photo by Katarzyna Modrzejewska: https://www.pexels.com/photo/clear-glass-terrarium-jar-with-mossy-plants-1400375/</p>
+                <div class="image-box">
+                    <img src="images/terrarium-opening-image.jpg">
+                    <a href="https://www.pexels.com/photo/clear-glass-terrarium-jar-with-mossy-plants-1400375/">Photo by Katarzyna Modrzejewska</a>
+                </div>
             </div>
         </div>
 
@@ -38,41 +41,41 @@
             <h1 class="section-title">Some types of Arium</h1>
 
             <div class="types-of-arium">
-                <div class="arium">
+                <div id="open-terrarium" class="arium">
                     <img src="images/terrarium-example.jpg">
                     <h2>Open Terrarium</h2>
-                    <p>A terrarium is designed mainly to raise plants. This example is an open one and suits plants that need less water like succulents.</p>
-                    <p>
+                    <p class="description">A terrarium is designed mainly to raise plants. This example is an open one and suits plants that need less water like succulents.</p>
+                    <p class="credit">
                         Photo by <a href="https://unsplash.com/@ugmonk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeff Sheldon</a> 
                         on <a href="https://unsplash.com/s/photos/terrarium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
                 </div>
 
-                <div class="arium">
+                <div id="sealed-terrarium" class="arium">
                     <img src="images/terrarium-example-2.jpg">
                     <h2>Sealed Terrarium</h2>
-                    <p>A sealed terrarium regulates water on its own; therefore, the container is always damp and suits organisms like moss and fern.</p>
-                    <p>
+                    <p class="description">A sealed terrarium regulates water on its own; therefore, the container is always damp and suits organisms like moss and fern.</p>
+                    <p class="credit">
                         Photo by <a href="https://unsplash.com/@keszthelyit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Keszthelyi Timi</a> 
                         on <a href="https://unsplash.com/s/photos/terrarium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
                 </div>
 
-                <div class="arium">
+                <div id="aquarium" class="arium">
                     <img src="images/aquarium-example.jpg">
                     <h2>Aquarium</h2>
-                    <p>An aquarium usually contains aquatic organisms.</p>
-                    <p>
+                    <p class="description">An aquarium usually contains aquatic organisms.</p>
+                    <p class="credit">
                         Photo by <a href="https://unsplash.com/@huyphan2602?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Huy Phan</a> 
                         on <a href="https://unsplash.com/s/photos/aquarium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
                 </div>
 
-                <div class="arium">
+                <div id="vivarium" class="arium">
                     <img src="images/vivarium-example.jpg">
                     <h2>Vivarium</h2>
-                    <p>A vivarium is primarily designed to be a habitat for one or many animals.</p>
-                    <p>
+                    <p class="description">A vivarium is primarily designed to be a habitat for one or many animals.</p>
+                    <p class="credit">
                         Photo by <a href="https://unsplash.com/@georgemillson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">George Millson</a> 
                         on <a href="https://unsplash.com/s/photos/vivarium?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                     </p>
@@ -83,13 +86,15 @@
         </div>
 
         <div id="quote-section" class="section">
-            <p class="quote">
-                This landing page project that involves the different types of Ariums is a part of my, Tung Quan Hoang, journey in The Odin Project.
-                At first, I wanted to make a page about terrariums only, but I deemed it a little boring so I diverted to different types of ariums instead.
-                However, that idea also encounters one major problem - there is no free image for lesser known types of ariums, so I have to fill in another
-                terrarium to fill out four images in the above section.
-            </p>
-            <p>- Tung Quan Hoang</p>
+            <div class="quote-box">
+                <p class="quote">
+                    This landing page project that involves the different types of Ariums is a part of my, Tung Quan Hoang, journey in The Odin Project.
+                    At first, I wanted to make a page about terrariums only, but I deemed it a little boring so I diverted to different types of ariums instead.
+                    However, that idea also encounters one major problem - there is no free image for lesser known types of ariums, so I have to fill in another
+                    terrarium to fill out four images in the above section.
+                </p>
+                <p class="author">- Tung Quan Hoang -</p>
+            </div>
         </div>
 
         <div id="signup-section" class="section">
